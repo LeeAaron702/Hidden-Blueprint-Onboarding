@@ -1,0 +1,390 @@
+/* src/styles.css */
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: 'New Grotesk', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    /* Changed to match Hidden Blueprint */
+    color: #fafbff;
+    /* Changed to match Hidden Blueprint */
+}
+
+.button {
+    background-image: linear-gradient(45deg, #755fff 20%, #163aca);
+    color: #fafbff;
+    border: none;
+    padding: 14px 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'New Grotesk', sans-serif;
+    font-size: 24px;
+    /* 1.5 times the original size */
+    padding: 15px 30px;
+    /* Increased padding */
+    align-self: flex-end;
+    /* Align to the right */
+    margin-right: 10%;
+    font-weight: 500;
+    line-height: 1.5;
+    outline: 1px solid rgba(255, 255, 255, .25);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: all .15s;
+}
+
+.button.back-button {
+    background-image: linear-gradient(45deg, #ff6b6b 20%, #ff9a9a);
+    justify-content: flex-start;
+    /* Align to the left */
+    margin-left: 10%;
+    /* Adjust margin to position */
+}
+
+.button.back-button:hover {
+    background-color: #ff6b6b;
+}
+
+.button-placeholder {
+    visibility: hidden;
+    background-image: linear-gradient(45deg, #ff6b6b 20%, #ff9a9a);
+    border: none;
+    padding: 15px 30px;
+    /* Match padding of .button */
+    border-radius: 12px;
+    margin-left: 8%;
+    /* Match margin of .button.back-button */
+}
+
+
+.button:hover {
+    background-color: rgb(54, 111, 246);
+}
+
+
+.button.help-button {
+    color: #000;
+
+    background-image: linear-gradient(45deg, #f9d423 20%, #ff4e00);
+    width: 75%;
+    /* Match the width of .sidebar-item */
+    padding: 12px;
+    /* Match the padding of .sidebar-item */
+    margin: 5px auto;
+    /* Match the margin of .sidebar-item */
+    text-align: center;
+    /* Center the text */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    border-radius: 4px;
+    /* Match the border-radius of .sidebar-item */
+    font-weight: 400;
+    /* Match the font-weight of .sidebar-item */
+    font-size: 25px;
+    /* Match the font-size of .sidebar-item */
+    position: sticky;
+    bottom: 10%;
+}
+
+.button.help-button:hover {
+    background-color: #f9d423;
+    /* Change background color on hover */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #000000;
+    /* Purple background */
+    padding: 80px 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    /* Optional: for rounded corners */
+    padding-top: 75px;
+    /* Adjusted: to match the sidebar's top margin */
+    padding-bottom: 10px;
+    /* Adjust this value to your liking */
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-step label,
+.form-step input {
+    width: 80%;
+    /* Adjust as needed */
+    font-size: 1.25em;
+    /* Increased size */
+    margin-bottom: 10px;
+    color: #fff;
+    /* White text color */
+}
+
+.form-step input,
+.form-step textarea {
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+    width: 80%;
+    /* Adjust as needed */
+    padding: 15px;
+    /* Increased padding */
+    border: 1px solid rgb(54, 111, 246);
+    /* Border color */
+    border-radius: 8px;
+    background-color: #000000;
+    /* Darker background */
+    color: #fff;
+    /* White text color */
+    font-size: 1.25em;
+    /* Increased size */
+}
+
+.form-step label {
+    font-size: 1.5em;
+    /* Adjusted to make question text larger */
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    /* Added to create some space between the question and the subtext */
+}
+
+.form-step label span.subtext {
+    display: block;
+    font-size: 0.9em;
+    /* Smaller font size for the subtext */
+    margin-bottom: 10px;
+    /* Space between subtext and textarea */
+    color: #bbb;
+    /* Lighter color for subtext */
+}
+
+.form-step input {
+    background-color: #000000;
+    /* Darker background for input */
+    border: 1px solid rgb(54, 111, 246);
+    /* White border */
+    padding: 15px;
+    /* Increased padding */
+    border-radius: 8px;
+    color: #fff;
+    /* White text color */
+}
+
+.form-step textarea {
+    width: 100%;
+    /* Adjust as needed */
+    padding: 15px;
+    /* Increased padding */
+    margin-bottom: 10px;
+    /* Space below the textarea */
+    border-radius: 8px;
+    /* Rounded corners */
+    border: 1px solid rgb(54, 111, 246);
+    /* Border color */
+    background-color: #000000;
+    /* Darker background for textarea */
+    color: #fff;
+    /* White text color */
+    font-size: 1.25em;
+    /* Increased size */
+    resize: vertical;
+    /* Allow vertical resize only */
+}
+
+.hb-logo-img {
+    width: 95%;
+    /* Full width of the sidebar */
+    margin-top: 18%;
+    margin-left: 5px;
+}
+
+
+
+.sidebar-background {
+    background-color: rgb(20, 15, 51);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Adjusted to start content at the top */
+}
+
+.sidebar {
+    color: #ecf0f1;
+    padding: 20px;
+    width: 100%;
+    font-size: 25px;
+    max-height: 66.66%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50%;
+    max-height: unset; /* or you can completely remove this line */
+    /* overflow-y: visible; makes the overflow visible */
+    margin-bottom: 10%; /* or adjust to a desired value */
+
+
+}
+
+
+.sidebar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    /* Set font-weight */
+}
+
+
+.step-navigation {
+    display: flex;
+    justify-content: space-between;
+    /* Updated to space-between to place buttons at either end */
+    width: 100%;
+    /* Match the width of your form */
+    margin: auto;
+    /* Center the container */
+}
+
+.sidebar-item {
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 75%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 5px auto;
+    /* Spacing between items and centering */
+}
+
+
+.sidebar-item.active {
+    background-color: #3498db;
+    font-weight: bold;
+
+}
+
+/* .sidebar-item:hover {
+    background-color: #2980b9;
+} */
+
+
+.start-button {
+    background-clip: text;
+    background-image: linear-gradient(45deg, rgb(201, 168, 255), rgb(54, 111, 246));
+    box-sizing: border-box;
+    color: rgb(250, 251, 255);
+    display: inline;
+    font-family: "New Grotesk", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: -1.67168px;
+    line-height: 76.8px;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+.start-button-container {
+    position: relative;
+    align-items: flex-start;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", Oxygen, "Fira Sans", "Droid Sans", sans-serif;
+    font-size: 16px;
+    height: 175.781px;
+    justify-content: flex-start;
+    line-height: 24px;
+    padding-bottom: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 48px;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    background: linear-gradient(to bottom, #333 0%, #000 60%);
+    border-radius: 20px;
+    overflow: hidden;
+    /* Hide the overflow to ensure the pseudo-element border conforms to the border-radius */
+    transition: background 0.3s, border-image-source 0.3s;
+    /* Updated to include border-image-source transition */
+
+}
+
+.start-button-container:hover {
+    background: linear-gradient(to bottom, #2d2d2d 0%, #111 60%);
+    /* Slightly lighter gradient on hover */
+}
+
+.start-button-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, #3b3b3b 0%, rgba(5, 5, 5, 0.605) 60%) 1;
+    border-radius: inherit;
+    /* Inherit the border-radius from the parent element */
+    pointer-events: none;
+    /* Ensure the pseudo-element does not interfere with interactions */
+    transition: border-image-source 0.3s;
+    /* Ensure smooth transition on border gradient change */
+
+}
+
+.start-button-container:hover::before {
+    border-image: linear-gradient(to bottom, #444 0%, #111 60%) 1;
+    /* Slightly lighter border gradient on hover */
+}
+
+
+
+.main-content {
+    margin-left: 250px;
+    /* Adjusted margin to account for reduced sidebar width */
+    padding: 20px;
+}
+
